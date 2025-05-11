@@ -38,6 +38,17 @@
   margin-bottom: 15px;
 }
 
+.form__group-content--name {
+  display: flex;
+  gap: 20px;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.form__group-content--name .form__input--text input{
+  width: 100;
+}
+
 .form__label--required {
   margin-left: 5px;
   padding: 4px 6px;
