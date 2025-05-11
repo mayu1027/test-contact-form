@@ -5,53 +5,90 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Form</title>
+  <title>FashionablyLate</title>
   <link rel="stylesheet" href="{{ asset('css/sanitize.css') }}" />
-  <link rel="stylesheet" href="{{ asset('css/confirm.css') }}" />
+  <link rel="stylesheet" href="{{ asset('css/index.css') }}" />
 </head>
 
 <body>
   <header class="header">
     <div class="header__inner">
       <a class="header__logo" href="/">
-        Contact Form
+        FashionablyLate
       </a>
     </div>
   </header>
 
   <main>
-    <div class="confirm__content">
-      <div class="confirm__heading">
-        <h2>お問い合わせ内容確認</h2>
+    <div class="contact-form__content">
+      <div class="contact-form__heading">
+        <h2>Contact</h2>
       </div>
       <form class="form">
-        <div class="confirm-table">
-          <table class="confirm-table__inner">
-            <tr class="confirm-table__row">
-              <th class="confirm-table__header">お名前</th>
-              <td class="confirm-table__text">
-                <input type="text" name="name" value="サンプルテキスト" />
-              </td>
-            </tr>
-            <tr class="confirm-table__row">
-              <th class="confirm-table__header">メールアドレス</th>
-              <td class="confirm-table__text">
-                <input type="email" name="email" value="サンプルテキスト" />
-              </td>
-            </tr>
-            <tr class="confirm-table__row">
-              <th class="confirm-table__header">電話番号</th>
-              <td class="confirm-table__text">
-                <input type="tel" name="tel" value="サンプルテキスト" />
-              </td>
-            </tr>
-            <tr class="confirm-table__row">
-              <th class="confirm-table__header">お問い合わせ内容</th>
-              <td class="confirm-table__text">
-                <input type="text" name="content" value="サンプルテキスト" />
-              </td>
-            </tr>
-          </table>
+        <div class="form__group">
+          <div class="form__group-title">
+            <span class="form__label--item">お名前</span>
+            <span class="form__label--required">必須</span>
+          </div>
+          <div class="form__group-content">
+            <div class="form__input--text">
+              <input type="text" name="name" placeholder="テスト太郎" />
+            </div>
+            <div class="form__error">
+              <!--バリデーション機能を実装したら記述します。-->
+            </div>
+          </div>
+          <div class="form__group">
+          <div class="form__group-title">
+            <span class="form__label--item">性別</span>
+            <span class="form__label--required">必須</span>
+          </div>
+          <div class="form__group-content">
+            <div class="form__input--text">
+              <input type="gender" name="gender" placeholder="男" />
+            </div>
+            <div class="form__error">
+              <!--バリデーション機能を実装したら記述します。-->
+            </div>
+          </div>
+        </div>
+        <div class="form__group">
+          <div class="form__group-title">
+            <span class="form__label--item">メールアドレス</span>
+            <span class="form__label--required">必須</span>
+          </div>
+          <div class="form__group-content">
+            <div class="form__input--text">
+              <input type="email" name="email" placeholder="test@example.com" />
+            </div>
+            <div class="form__error">
+              <!--バリデーション機能を実装したら記述します。-->
+            </div>
+          </div>
+        </div>
+        <div class="form__group">
+          <div class="form__group-title">
+            <span class="form__label--item">電話番号</span>
+            <span class="form__label--required">必須</span>
+          </div>
+          <div class="form__group-content">
+            <div class="form__input--text">
+              <input type="tel" name="tel" placeholder="09012345678" />
+            </div>
+            <div class="form__error">
+              <!--バリデーション機能を実装したら記述します。-->
+            </div>
+          </div>
+        </div>
+        <div class="form__group">
+          <div class="form__group-title">
+            <span class="form__label--item">お問い合わせ内容</span>
+          </div>
+          <div class="form__group-content">
+            <div class="form__input--textarea">
+              <textarea name="content" placeholder="資料をいただきたいです"></textarea>
+            </div>
+          </div>
         </div>
         <div class="form__button">
           <button class="form__button-submit" type="submit">送信</button>
@@ -62,3 +99,4 @@
 </body>
 
 </html>
+
